@@ -16,7 +16,7 @@ def get_japanese_emoticon (filep,emo)
   if hash["get_emoticon"].key?(emo)
     return hash["get_emoticon"][emo]
   else 
-    return "Sorry"
+    return "Sorry, that emoticon was not found"
   end
   
 end
