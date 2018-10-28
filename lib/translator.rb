@@ -17,6 +17,7 @@ def get_japanese_emoticon (filep,emo)
     return hash[get_emoticon][emo]
   else 
     return "Sorry"
+  end
   
 end
 
