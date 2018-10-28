@@ -5,7 +5,7 @@ def load_library (filep)
   new_hash = {"get_meaning" => {},"get_emoticon" => {} }
   hash.each do |key,val|
     new_hash["get_meaning"][val[1]] = key
-    new_hash["get_emoticon"][val[0]] = new_hash["get_meaning"][val[1]]
+    new_hash["get_emoticon"][val[0]] = key #new_hash["get_meaning"][val[1]]
   end
   new_hash
 end
