@@ -4,7 +4,7 @@ def load_library (file)
   hash = YAML.load_file(file)
   new_hash = {:get_meaning,:get_emoticon}
   hash.each do |key,val|
-    new_hash[get_meaning][key]
+    new_hash[get_meaning][val][1] = 
   end
 end
 
