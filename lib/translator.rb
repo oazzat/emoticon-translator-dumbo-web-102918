@@ -7,6 +7,7 @@ def load_library (file)
     new_hash["get_meaning"][val][1] = key
     new_hash["get_emoticon"][val][0] = new_hash[get_meaning][val][1]
   end
+  new_hash
 end
 
 def get_japanese_emoticon
