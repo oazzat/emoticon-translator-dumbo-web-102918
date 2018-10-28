@@ -12,10 +12,8 @@ end
 
 def get_japanese_emoticon (filep,emo)
   hash = load_library(filep)
-  val_array = hash.values.flatten
-  puts val_array
   
-  if hash.values.flatten.include?(emo)
+  if hash[get_emoticon].key?(emo)
     return hash[get_emoticon][emo]
   else 
     return "Sorry"
