@@ -1,7 +1,7 @@
 require "yaml"
 
-def load_library (file)
-  hash = YAML.load_file(file)
+def load_library (filep)
+  hash = YAML.load_file(filep)
   new_hash = {}
   hash.each do |key,val|
     new_hash["get_meaning"][val][1] = key
