@@ -10,8 +10,11 @@ def load_library (filep)
   new_hash
 end
 
-def get_japanese_emoticon
-  # code goes here
+def get_japanese_emoticon (filep,emo)
+  hash = load_library(filep)
+  
+  return hash[get_emoticon][emo]
+  
 end
 
 def get_english_meaning
