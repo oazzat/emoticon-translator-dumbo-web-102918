@@ -2,7 +2,7 @@ require "yaml"
 
 def load_library (file)
   hash = YAML.load_file(file)
-  new_hash = {}
+  new_hash = {:get_meaning,:get_emoticon}
   hash.each do |key,val|
     new_hash[key]
   end
