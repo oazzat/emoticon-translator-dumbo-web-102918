@@ -2,7 +2,10 @@ require "yaml"
 
 def load_library (file)
   hash = YAML.load_file(file)
-  
+  new_hash = {}
+  hash.each do |key,val|
+    new_hash[key]
+  end
 end
 
 def get_japanese_emoticon
