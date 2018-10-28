@@ -25,8 +25,8 @@ def get_english_meaning (filep,emo)
   hash = load_library(filep)
   
   if hash["get_meaning"].key?(emo)
-    return hash["get_emoticon"][emo]
+    return hash["get_meaning"][emo]
   else 
-    return "Sorry, that emoticon was not found"
+    return "Sorry, that meaning was not found"
   end
 end
