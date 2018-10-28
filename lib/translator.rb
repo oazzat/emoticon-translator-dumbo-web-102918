@@ -14,7 +14,7 @@ def get_japanese_emoticon (filep,emo)
   hash = load_library(filep)
   
   if hash["get_emoticon"].key?(emo)
-    return hash[get_emoticon][emo]
+    return hash["get_emoticon"][emo]
   else 
     return "Sorry"
   end
